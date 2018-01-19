@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="ldU-7t-Oek">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="F5X-9z-uMg" customClass="RegisterViewController" customModule="StreetBalldar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b2l-IV-H0u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bx8-h5-G7j">
+                                <rect key="frame" x="40" y="268.5" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSp-71-xFV">
+                                <rect key="frame" x="40" y="318.5" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH9-rH-F6I">
+                                <rect key="frame" x="40" y="227.5" width="102.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="anz-x9-xiY">
+                                <rect key="frame" x="40" y="368.5" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnu-WE-0rA">
+                                <rect key="frame" x="40" y="567" width="295" height="40"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.59607843140000005" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="z8x-of-TAW"/>
+                                </constraints>
+                                <state key="normal" title="Регистрация">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="F5X-9z-uMg" eventType="touchUpInside" id="Krm-vP-HuP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WH9-rH-F6I" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="8j4-UV-TqA"/>
+                            <constraint firstItem="anz-x9-xiY" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="Dim-wJ-OS9"/>
+                            <constraint firstItem="MSp-71-xFV" firstAttribute="centerX" secondItem="b2l-IV-H0u" secondAttribute="centerX" id="JDC-bn-WTG"/>
+                            <constraint firstItem="5ee-Y7-ZAo" firstAttribute="bottom" secondItem="qnu-WE-0rA" secondAttribute="bottom" constant="60" id="N5U-gE-W4e"/>
+                            <constraint firstItem="5ee-Y7-ZAo" firstAttribute="trailing" secondItem="anz-x9-xiY" secondAttribute="trailing" constant="40" id="NcT-bQ-BA5"/>
+                            <constraint firstItem="Bx8-h5-G7j" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="Pag-Xj-73K"/>
+                            <constraint firstItem="5ee-Y7-ZAo" firstAttribute="trailing" secondItem="MSp-71-xFV" secondAttribute="trailing" constant="40" id="Pdw-hE-pZZ"/>
+                            <constraint firstItem="5ee-Y7-ZAo" firstAttribute="trailing" secondItem="Bx8-h5-G7j" secondAttribute="trailing" constant="40" id="RG9-cJ-sAK"/>
+                            <constraint firstItem="anz-x9-xiY" firstAttribute="top" secondItem="MSp-71-xFV" secondAttribute="bottom" constant="20" id="YvI-5F-kz9"/>
+                            <constraint firstItem="Bx8-h5-G7j" firstAttribute="top" secondItem="WH9-rH-F6I" secondAttribute="bottom" constant="20" id="k1N-Fk-M7E"/>
+                            <constraint firstItem="MSp-71-xFV" firstAttribute="centerY" secondItem="b2l-IV-H0u" secondAttribute="centerY" id="mWc-iY-2I8"/>
+                            <constraint firstItem="MSp-71-xFV" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="q8g-zV-8Mh"/>
+                            <constraint firstItem="5ee-Y7-ZAo" firstAttribute="trailing" secondItem="qnu-WE-0rA" secondAttribute="trailing" constant="40" id="rPI-mp-S7f"/>
+                            <constraint firstItem="qnu-WE-0rA" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="ueJ-ih-rOA"/>
+                            <constraint firstItem="MSp-71-xFV" firstAttribute="top" secondItem="Bx8-h5-G7j" secondAttribute="bottom" constant="20" id="x8U-QG-VhJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5ee-Y7-ZAo"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="Bx8-h5-G7j" id="4a4-0D-BEk"/>
+                        <outlet property="passwordCheckTestField" destination="anz-x9-xiY" id="e84-TY-9bl"/>
+                        <outlet property="passwordTextField" destination="MSp-71-xFV" id="nWL-au-Zxu"/>
+                        <outlet property="registerButton" destination="qnu-WE-0rA" id="TSE-7z-bPT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2jw-tv-gMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1063" y="838"/>
+        </scene>
+    </scenes>
+</document>

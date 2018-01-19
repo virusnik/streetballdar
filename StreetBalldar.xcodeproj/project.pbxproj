@@ -15,6 +15,9 @@
 		6F37E85E200D0FE8004434E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E85C200D0FE8004434E3 /* LaunchScreen.storyboard */; };
 		6F37E869200D0FE8004434E3 /* StreetBalldarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E868200D0FE8004434E3 /* StreetBalldarTests.swift */; };
 		6F37E874200D0FE8004434E3 /* StreetBalldarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E873200D0FE8004434E3 /* StreetBalldarUITests.swift */; };
+		6F37E885200DBC37004434E3 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E884200DBC36004434E3 /* Register.storyboard */; };
+		6F37E887200DBC49004434E3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E886200DBC49004434E3 /* RegisterViewController.swift */; };
+		6F37E889200DBD23004434E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E888200DBD23004434E3 /* GoogleService-Info.plist */; };
 		7BD90840306CB2885ED64CD5 /* Pods_StreetBalldarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C642B94ED564E8FB156DA29 /* Pods_StreetBalldarUITests.framework */; };
 		CF13B4D4BFA2EAA70EF86CE4 /* Pods_StreetBalldarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14F2E837C068D87777E4CA6 /* Pods_StreetBalldarTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,9 @@
 		6F37E86F200D0FE8004434E3 /* StreetBalldarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetBalldarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F37E873200D0FE8004434E3 /* StreetBalldarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetBalldarUITests.swift; sourceTree = "<group>"; };
 		6F37E875200D0FE8004434E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F37E884200DBC36004434E3 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		6F37E886200DBC49004434E3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6F37E888200DBD23004434E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6F83227D9F521D1D13525E81 /* Pods_StreetBalldar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreetBalldar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7471B112E3A8451765EB0A84 /* Pods-StreetBalldarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetBalldarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreetBalldarTests/Pods-StreetBalldarTests.release.xcconfig"; sourceTree = "<group>"; };
 		7845746361BD2611C77AAEE0 /* Pods-StreetBalldar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetBalldar.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreetBalldar/Pods-StreetBalldar.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 				6F37E883200DB6E6004434E3 /* Controllers */,
 				6F37E85A200D0FE8004434E3 /* Assets.xcassets */,
 				6F37E85F200D0FE8004434E3 /* Info.plist */,
+				6F37E888200DBD23004434E3 /* GoogleService-Info.plist */,
 			);
 			path = StreetBalldar;
 			sourceTree = "<group>";
@@ -154,6 +161,7 @@
 			children = (
 				6F37E857200D0FE8004434E3 /* Main.storyboard */,
 				6F37E85C200D0FE8004434E3 /* LaunchScreen.storyboard */,
+				6F37E884200DBC36004434E3 /* Register.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				6F37E855200D0FE8004434E3 /* ViewController.swift */,
+				6F37E886200DBC49004434E3 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,9 +314,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F37E889200DBD23004434E3 /* GoogleService-Info.plist in Resources */,
 				6F37E85E200D0FE8004434E3 /* LaunchScreen.storyboard in Resources */,
 				6F37E85B200D0FE8004434E3 /* Assets.xcassets in Resources */,
 				6F37E859200D0FE8004434E3 /* Main.storyboard in Resources */,
+				6F37E885200DBC37004434E3 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F37E887200DBC49004434E3 /* RegisterViewController.swift in Sources */,
 				6F37E856200D0FE8004434E3 /* ViewController.swift in Sources */,
 				6F37E854200D0FE8004434E3 /* AppDelegate.swift in Sources */,
 			);

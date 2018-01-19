@@ -67,5 +67,5 @@ fastlane/screenshots
 fastlane/test_output
 
 # Custom ingonre files
-.DStore
+.DS_Store
 GoogleService-Info.plist
